@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home page</title>
+</head>
+<style type="text/css">
+    #heading {
+        width: 90%;
+        height: 60px;
+        background-color: aqua;
+        font-size: 20px;
+
+    }
+
+    #logout {
+
+        margin: 25px;
+
+    }
+
+    #login {
+        margin: 25px;
+    }
+
+    .input {
+        width: 400px;
+        height: 10px;
+        padding: 10px;
+        border-color: burlywood
+    }
+
+    .information {
+        margin: 20px;
+        font-size: 25px;
+    }
+
+    #input1 {
+        margin-left: 86px;
+    }
+
+    #input2 {
+        margin-left: 86px;
+    }
+    #input3 {
+        margin-left: 125px;
+    }
+
+    #btn {
+        font-size: 20px;
+        border-radius: 10px;
+        background-color: green;
+    }
+</style>
+
+<body>
+    <form action='/'>
+        <nav id='heading'>
+            <ul>
+                <li>
+                    <a id=logout href='/logout'>Logout</a>
+                    <a id=login href='/login'>Login</a>
+                    <a id=home href='/'>Homepage</a>
+                </li>
+            </ul>
+        </nav>
+        <header>
+            <h2>user registration</h2>
+        </header>
+        <form action='/' method="POST">
+            <label class="information">
+                username:
+            </label>
+            <input type="text" name="username" class="input" id="input1">
+            <p>
+                    <label class="information">
+                            email:
+                        </label>
+                        <input type="text" name='email' class="input" id="input3">
+
+            </p>
+            <p>
+                <label class="information">
+                    password:
+                </label>
+                <input type="password" name="password" class="input" id="input2">
+
+            </p>
+            <p>
+                <label class="information">
+                    confirm password:
+                </label>
+                <input type="password" name="confirmpassword" class="input">
+
+            </p>
+
+
+            <button type="submit" id="btn">Submit</button>
+            <p>
+                <a class='google-btn' href='/auth/google'>
+                    <h3>Google+</h3>
+                </a>
+
+
+            </p>
+
+        </form>
+        <form action='/logout' method="POST">
+
+        </form>
+
+
+    </form>
+</body>
+
+</html>

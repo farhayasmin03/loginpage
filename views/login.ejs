@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>login page</title>
+</head>
+<style type="text/css">
+    #heading {
+        width: 90%;
+        height: 60px;
+        background-color: aqua;
+        font-size: 20px;
+
+    }
+
+    #logout {
+
+        margin: 25px;
+
+    }
+
+    #login {
+        margin: 25px;
+    }
+
+    .input {
+        width: 400px;
+        height: 10px;
+        padding: 10px;
+        border-color: burlywood
+    }
+
+    .information {
+        margin: 20px;
+        font-size: 25px;
+    }
+
+    #input1 {
+        margin-left: 86px;
+    }
+
+    #input2 {
+        margin-left: 48px;
+    }
+    #btn {
+        font-size: 20px;
+        border-radius: 10px;
+        background-color:lightblue;
+    }
+    </style>
+<body>
+        <form action='/'>
+            <nav id='heading'>
+                <ul>
+                    <li>
+                        <a id=logout href='/logout'>Logout</a>
+                        <a id=login href='/login'>Login</a>
+                        <a id=home href='/'>Homepage</a>
+                    </li>
+                </ul>
+            </nav>
+            <header>
+                <h2>user registration</h2>
+            </header>
+    <form action='/login' method="POST">
+        <p>
+                <label class="information">
+                        email:
+                    </label>
+                    <input type="text" name='email' class="input" id="input1">
+
+        </p>
+        <p>
+            <label class="information">
+                password:
+            </label>
+            <input type="password" name="password" class="input" id="input2">
+
+        </p>
+        <button type="submit" id='btn'>LOGIN</button>
+
+    </form>
+</form>
+    
+</body>
+</html>
